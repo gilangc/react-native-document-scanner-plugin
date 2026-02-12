@@ -22,6 +22,12 @@ export interface ScanDocumentOptions {
    * scan image file paths or base64 images.
    * @default: ResponseType.ImageFilePath
    */
+  /**
+   * Android only: The scanner mode to use
+   * @default: AndroidScannerMode.ScannerModeFull
+   */
+  androidScannerMode?: number;
+
   responseType?: ResponseType;
 }
 

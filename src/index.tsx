@@ -3,6 +3,12 @@ import DocumentScanner, {
   type ScanDocumentResponse,
 } from './NativeDocumentScanner';
 
+export enum AndroidScannerMode {
+  ScannerModeFull = 1,
+  ScannerModeBaseWithFilter = 2,
+  ScannerModeBase = 3,
+}
+
 export type {
   ScanDocumentOptions,
   ScanDocumentResponse,
