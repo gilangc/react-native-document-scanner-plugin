@@ -1,7 +1,7 @@
 import { createRunOncePlugin, withInfoPlist } from '@expo/config-plugins';
 import type { ConfigPlugin } from '@expo/config-plugins';
 
-const pkg = require('react-native-document-scanner-plugin/package.json');
+const pkg = require('@g.charismadiptya/react-native-document-scanner-plugin/package.json');
 
 const CAMERA_USAGE = 'Allow $(PRODUCT_NAME) to access your camera';
 

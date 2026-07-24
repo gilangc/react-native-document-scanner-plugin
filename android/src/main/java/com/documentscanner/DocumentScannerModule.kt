@@ -53,6 +53,12 @@ class DocumentScannerModule(reactContext: ReactApplicationContext) :
       .setResultFormats(GmsDocumentScannerOptions.RESULT_FORMAT_JPEG)
       .setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_FULL)
 
+    if (options.hasKey("androidScannerMode")) {
+      documentScannerOptionsBuilder.setScannerMode(
+        options.getInt("androidScannerMode")
+      )
+    }
+
     if (options.hasKey("maxNumDocuments")) {
       documentScannerOptionsBuilder.setPageLimit(
         options.getInt("maxNumDocuments")
