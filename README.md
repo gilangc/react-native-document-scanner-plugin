@@ -2,6 +2,8 @@
 
 [![Npm package version](https://img.shields.io/npm/v/react-native-document-scanner-plugin/latest.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/react-native-document-scanner-plugin) [![npm dev dependency version](https://img.shields.io/npm/dependency-version/react-native-document-scanner-plugin/dev/react-native?color=61DAFB&logo=react&style=for-the-badge)](https://github.com/WebsiteBeaver/react-native-document-scanner-plugin/blob/master/package.json)
 
+> This fork includes the `androidScannerMode` option, based on [PR #150](https://github.com/WebsiteBeaver/react-native-document-scanner-plugin/pull/150) but adapted for the latest version of the plugin.
+
 This is a React Native plugin that lets you scan documents using Android and iOS. You can use it to create
 apps that let users scan notes, homework, business cards, receipts, or anything with a rectangular shape.
 
@@ -184,6 +186,7 @@ Opens the camera, and starts the document scan
 | **`croppedImageQuality`**   | <code>number</code>                                   | The quality of the cropped image from 0 - 100. 100 is the best quality.                                                                                                                                                                                                                                                | <code>: 100</code>                         |
 | **`maxNumDocuments`**   | <code>number</code>                                   | Android only: The maximum number of photos an user can take (not counting photo retakes)                                                                                                                                                                                                                                                  | <code>: undefined</code>                         |
 | **`responseType`**      | <code><a href="#responsetype">ResponseType</a></code> | The response comes back in this format on success. It can be the document scan image file paths or base64 images.                                                                                                                                                                                                                         | <code>: ResponseType.ImageFilePath</code> |
+| **`androidScannerMode`**| <code><a href="#androidscannermode">AndroidScannerMode</a></code> | Android only: The scanner mode to use.                                                                                                                                                                                                                                                                                                  | <code>: AndroidScannerMode.ScannerModeFull</code> |
 
 
 ### Enums
@@ -203,6 +206,15 @@ Opens the camera, and starts the document scan
 | ------------------- | ---------------------------- | ------------------------------------------------------------------------------- |
 | **`Base64`**        | <code>'base64'</code>        | Use this response type if you want document scan returned as base64 images.     |
 | **`ImageFilePath`** | <code>'imageFilePath'</code> | Use this response type if you want document scan returned as inmage file paths. |
+
+
+#### AndroidScannerMode
+
+| Members                     | Value | Description |
+| --------------------------- | ----- | ----------- |
+| **`ScannerModeFull`**       | <code>1</code> | The full scanner capabilities. |
+| **`ScannerModeBaseWithFilter`** | <code>2</code> | Base scanner functionality with filter support. |
+| **`ScannerModeBase`**       | <code>3</code> | Base scanner functionality. |
 
 ## Expo
 

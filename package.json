@@ -1,6 +1,6 @@
 {
-  "name": "react-native-document-scanner-plugin",
-  "version": "2.0.4",
+  "name": "@g.charismadiptya/react-native-document-scanner-plugin",
+  "version": "2.1.1",
   "description": "A React Native plugin that lets you scan documents using Android and iOS",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -51,14 +51,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/websitebeaver/react-native-document-scanner-plugin.git"
+    "url": "git+https://github.com/gilangc/react-native-document-scanner-plugin.git"
   },
   "author": "David Marcus <david@websitebeaver.com> (https://github.com/websitebeaver)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/websitebeaver/react-native-document-scanner-plugin/issues"
+    "url": "https://github.com/gilangc/react-native-document-scanner-plugin/issues"
   },
-  "homepage": "https://github.com/websitebeaver/react-native-document-scanner-plugin#readme",
+  "homepage": "https://github.com/gilangc/react-native-document-scanner-plugin#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
